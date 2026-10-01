@@ -1,0 +1,211 @@
+# fields separated by `|`:  keyword | category | severity
+# severity: high | med | low
+
+# BVN / personal identifier requests — high
+bvn|bvn_request|high
+bank verification number|bvn_request|high
+bank verification|bvn_request|high
+nin|nin_request|high
+national identification number|nin_request|high
+national identity|nin_request|high
+card number|card_request|high
+card details|card_request|high
+atm pin|card_request|high
+cvv|card_request|high
+otp|otp_request|high
+one time password|otp_request|high
+one-time password|otp_request|high
+verification code|otp_request|high
+pin|pin_request|med
+
+# urgency — high
+immediately|urgency|high
+right now|urgency|high
+urgent|urgency|high
+within 24 hours|urgency|high
+within 48 hours|urgency|high
+last chance|urgency|high
+final notice|urgency|high
+expires today|urgency|high
+expires in|urgency|med
+act now|urgency|high
+act fast|urgency|high
+hurry|urgency|med
+limited time|urgency|med
+
+# threats — high
+account suspended|threat|high
+account blocked|threat|high
+account will be closed|threat|high
+account will be blocked|threat|high
+account deactivated|threat|high
+account disabled|threat|high
+will be deleted|threat|high
+will be terminated|threat|high
+access denied|threat|high
+suspended|threat|med
+blocked|threat|med
+deactivated|threat|high
+reactivate|threat|med
+unlock your account|threat|high
+legal action|threat|high
+
+# action words — med
+click here|action|med
+click the link|action|med
+click below|action|med
+verify now|action|high
+confirm now|action|high
+update now|action|high
+login now|action|med
+verify your account|action|high
+confirm your identity|action|high
+validate your account|action|high
+update your details|action|high
+
+# money-related — med
+transfer|money|med
+send money|money|high
+payment|money|med
+pay ₦|money|med
+pay n|money|med
+send ₦|money|high
+send n|money|high
+processing fee|money|high
+clearance fee|money|high
+unlock fee|money|high
+activation fee|money|high
+customs fee|money|high
+delivery fee|money|med
+tax|money|low
+cbn grant|cbn_grant|high
+government grant|gov_grant|high
+free loan|loan_scam|high
+loan approved|loan_scam|high
+qualified for loan|loan_scam|high
+
+# reward patterns — high
+you have won|reward_scam|high
+congratulations you won|reward_scam|high
+congratulations! you|reward_scam|high
+you won|reward_scam|high
+claim your prize|reward_scam|high
+claim your reward|reward_scam|high
+free data|telco_scam|med
+free airtime|telco_scam|med
+bonus data|telco_scam|med
+promo code|telco_scam|med
+gift card|reward_scam|med
+
+# crypto — high
+bitcoin|scam_crypto|med
+btc|scam_crypto|med
+send 0.0|scam_crypto|high
+double your|scam_crypto|high
+crypto giveaway|scam_crypto|high
+
+# recruitment scams — med
+recruitment|job_scam|med
+job offer|job_scam|med
+nnpc recruitment|job_scam|high
+apply now|job_scam|med
+shortlisted|job_scam|med
+interview invitation|job_scam|med
+pay for form|job_scam|high
+form fee|job_scam|high
+
+# WhatsApp account takeover — high
+send me the code|whatsapp_hijack|high
+send the code|whatsapp_hijack|high
+code sent to you|whatsapp_hijack|high
+wrong number|whatsapp_hijack|high
+forward this message|chain|low
+forward to 10|chain|low
+forward to 5|chain|low
+
+# job / recruitment scams (expanded — common in Nigeria)
+work account|job_scam|high
+create your account|job_scam|med
+create your work account|job_scam|high
+monitor your salary|job_scam|high
+monitor your earnings|job_scam|high
+invite_code|invite_code|high
+invite_code|invite_code|high
+invite_code|invite_code|high
+invite_code|invite_code|med
+invite_code|invite_code|med
+registration is free|job_scam|med
+registrations is free|job_scam|med
+reg is free|job_scam|low
+take a screenshot of your account|job_scam|high
+send a screenshot|job_scam|med
+screenshot your account|job_scam|high
+our system|job_scam|low
+copy the link|job_scam|med
+copy this link|job_scam|med
+copy link to browser|job_scam|med
+register to get started|job_scam|med
+register now|job_scam|med
+start earning|job_scam|high
+earn daily|job_scam|high
+earn weekly|job_scam|high
+earn from home|job_scam|high
+work from home|job_scam|med
+remote job|job_scam|med
+online job|job_scam|med
+task job|job_scam|high
+simple tasks|job_scam|med
+daily tasks|job_scam|med
+paid per task|job_scam|high
+payment per task|job_scam|high
+commission|job_scam|med
+salary|job_scam|low
+weekly pay|job_scam|med
+daily pay|job_scam|high
+instant pay|job_scam|high
+withdraw your earnings|job_scam|high
+withdraw funds|job_scam|med
+account number for payment|job_scam|high
+account details for payment|job_scam|high
+whatsapp me|job_scam|med
+message me on whatsapp|job_scam|med
+telegram me|job_scam|med
+contact on telegram|job_scam|med
+
+# government / grant scams — common in Nigeria
+tetfund|gov_scam|high
+nigeria student grant|gov_scam|high
+student support grant|gov_scam|high
+student grant|gov_scam|high
+nelfund|gov_scam|high
+cbn grant|cbn_grant|high
+federal grant|gov_scam|high
+state grant|gov_scam|med
+government grant|gov_scam|high
+cash transfer|gov_scam|high
+social investment|gov_scam|med
+trader moni|gov_scam|high
+market moni|gov_scam|high
+npower|gov_scam|high
+conditional cash|gov_scam|med
+president bola|gov_scam|high
+president tinubu|gov_scam|high
+tinubu|gov_scam|high
+asíwájú|gov_scam|high
+bola ahmed|gov_scam|high
+maruf tunji|gov_scam|high
+minister of education|gov_scam|med
+minister of humanitarian|gov_scam|med
+federal ministry|gov_scam|med
+apply now for|gov_scam|med
+apply now|gov_scam|med
+share with other|chain|high
+share with friends|chain|med
+share with family|chain|med
+share to your|chain|med
+broadcast to|chain|med
+forward to your|chain|med
+tell others|chain|low
+n.b:|chain|low
+n.b|chain|low
+note bene|chain|low

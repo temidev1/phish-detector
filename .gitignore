@@ -1,0 +1,36 @@
+# never commit secrets
+keys.json
+*.key
+.env
+config.local.json
+
+# never commit cache
+cache.json
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# reports
+*.pdf
+*.html
+reports/
+output/
+
+# wordlists / data downloads
+*.csv
+*.txt
+!requirements.txt
+
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.swp
+.DS_Store
+
+# data files must be committed
+!data/*.txt
